@@ -5,7 +5,7 @@
     <valueManagerType typeId="095c9bb2-cae5-48f9-af65-12049901a5ff" valueTypeId="55cfe0bd-320e-4383-b744-47c01be53336"/>
     <valueKeyType typeId="46556ad3-4965-43b6-a490-7d66fba2f499" valueTypeId="48abe7fc-0ee2-484c-91ac-53d8541b9533"/>
   </producedTypes>
-  <name>КСЮ_ИдентификаторГруппыДляОповещения</name>
+  <name>ВКМ_ИдентификаторГруппыДляОповещения</name>
   <synonym>
     <key>ru</key>
     <value>Идентификатор группы для оповещения</value>

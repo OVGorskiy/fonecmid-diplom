@@ -5,7 +5,7 @@
     <valueManagerType typeId="6cce9e78-d788-4dd8-9752-d94aa5815fcd" valueTypeId="9c96b31c-1b19-432b-9a81-3ad7e93e47d4"/>
     <valueKeyType typeId="f0f049b3-0820-4f13-9e5a-9c127e07af0d" valueTypeId="1efbdfc8-ca3c-4f9f-a831-d587f0e89679"/>
   </producedTypes>
-  <name>КСЮ_ТокенУправленияТелеграмБотом</name>
+  <name>ВКМ_ТокенУправленияТелеграмБотом</name>
   <synonym>
     <key>ru</key>
     <value>Токен управления телеграм-ботом</value>
