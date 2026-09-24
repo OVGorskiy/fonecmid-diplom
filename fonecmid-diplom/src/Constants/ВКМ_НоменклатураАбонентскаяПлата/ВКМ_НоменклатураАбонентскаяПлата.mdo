@@ -5,7 +5,7 @@
     <valueManagerType typeId="51d6ae98-1696-4510-b60e-66155022dfd4" valueTypeId="45b9f9a2-2236-4545-b692-eaf836d58a96"/>
     <valueKeyType typeId="cea54625-8fd7-4ee6-a14a-281281328c14" valueTypeId="e8cbf7d0-c4cb-4b7f-99a1-3519f084635e"/>
   </producedTypes>
-  <name>КСЮ_НоменклатураАбонентскаяПлата</name>
+  <name>ВКМ_НоменклатураАбонентскаяПлата</name>
   <synonym>
     <key>ru</key>
     <value>Номенклатура абонентская плата</value>
