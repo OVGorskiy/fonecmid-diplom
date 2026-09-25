@@ -67,6 +67,10 @@
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Папка</value>
+    </synonym>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -150,7 +154,7 @@
       <value>Размещение</value>
     </synonym>
     <type>
-      <types>DocumentRef.РеализацияТоваровУслуг</types>
+      <types>DocumentRef.ВКМ_ОбслуживаниеКлиента</types>
     </type>
     <toolTip>
       <key>ru</key>

@@ -11,4 +11,5 @@
   <content>CommonModule.ВКМ_Телеграм</content>
   <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
   <content>ScheduledJob.ВКМ_ОтправкаУведомлений</content>
+  <content>DataProcessor.МассовоеСозданиеАктов</content>
 </mdclass:Subsystem>
