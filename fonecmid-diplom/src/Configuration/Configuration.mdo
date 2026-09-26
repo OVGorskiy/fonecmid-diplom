@@ -1409,4 +1409,6 @@
   <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartsOfCalculationTypes>
   <calculationRegisters>CalculationRegister.ВКМ_Начисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_НачисленияПремий</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_УдержанияСотрудников</calculationRegisters>
 </mdclass:Configuration>

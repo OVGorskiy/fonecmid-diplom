@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="572772ef-9fb9-41de-b49e-52a18d2742a5">
+  <producedTypes>
+    <selectionType typeId="7dc7772a-8802-483f-8b37-b1664cbe28f5" valueTypeId="00f48322-dfb1-4fb9-a798-5f1ced1f2766"/>
+    <listType typeId="80bfb17b-215b-45d3-aedd-62c18990391d" valueTypeId="936d00cf-f473-4186-a54a-76376c14b3c7"/>
+    <managerType typeId="068952b2-7df5-4eeb-827a-a93a4b775257" valueTypeId="5dd1b44a-f851-4663-8c6e-a86043103a55"/>
+    <recordSetType typeId="e53f1010-a563-418e-9c2c-de9c5174d6e2" valueTypeId="f649bb38-44e8-4a1d-a227-6d9ea636fcc9"/>
+    <recordKeyType typeId="5b6d18ce-a4f2-4ce3-8a38-c7e4f4d06e90" valueTypeId="77fc0570-8eba-49de-9af5-2a6f703eb164"/>
+    <recordType typeId="c0ada6c6-6f70-4b01-b686-a97f6bd5e169" valueTypeId="303ed181-f272-48ee-9acf-4494b8f85f43"/>
+    <recalcsType typeId="e84ef870-aab1-4881-8b9b-85db3ad8df51" valueTypeId="3ad0a800-62a6-43a2-ace0-f43837b5cb40"/>
+  </producedTypes>
+  <name>ВКМ_НачисленияПремий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления премий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="82b7d784-1692-4ec0-ad38-c5580fc550ce">
+    <name>Результат</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9aa0c376-fc6a-4277-80f6-e88bc184c734">
+    <name>Сотрудник</name>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>

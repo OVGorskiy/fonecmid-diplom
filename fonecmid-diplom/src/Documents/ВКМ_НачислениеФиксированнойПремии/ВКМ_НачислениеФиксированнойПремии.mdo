@@ -28,6 +28,8 @@
   <autonumbering>true</autonumbering>
   <registerRecords>CalculationRegister.ВКМ_Начисления</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_НачисленияПремий</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_УдержанияСотрудников</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="3aadaf60-6387-4f89-9364-834004c0d18c">
@@ -42,14 +44,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="e593bb76-efcb-48c0-a117-4a3a4503d784">
+  <attributes uuid="5eea5925-d0e9-4401-b3b9-898ef8eeda97">
     <name>Комментарий</name>
     <type>
       <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
+      <stringQualifiers/>
     </type>
+    <multiLine>true</multiLine>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc074da4-d7ab-402d-97e8-1fae0bffe935">
+  <producedTypes>
+    <selectionType typeId="664ca660-0e11-4105-a47c-71c8ec644611" valueTypeId="7bd62089-2f0e-45bf-b20b-762b56e7a355"/>
+    <listType typeId="f24f2d97-8216-49be-a45a-04be4d0b8585" valueTypeId="a032c9a7-e227-433e-8ec6-cce264313ca7"/>
+    <managerType typeId="523c35b3-e845-4279-b8b6-823cb10a4a23" valueTypeId="913fc93d-81fb-42e6-afe0-68201e554ac4"/>
+    <recordSetType typeId="b2f70b44-29fe-420c-8582-fb7e28246824" valueTypeId="34e648d0-1c48-448f-b0d0-b951c99b1a7e"/>
+    <recordKeyType typeId="47afdef8-06c2-4709-b028-f297f73de590" valueTypeId="902c436d-e480-47ca-b79f-363e3c79133e"/>
+    <recordType typeId="00260097-a85b-4449-9f81-08f33bbfe3cb" valueTypeId="2460ebc3-c8b6-40c1-8c71-eb52775c3fac"/>
+    <recalcsType typeId="a57aa8e3-b3cf-4b7b-99bd-13d73a6de008" valueTypeId="e630a38f-0af6-4fb4-8636-6a1e8f85b9da"/>
+  </producedTypes>
+  <name>ВКМ_УдержанияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3394e251-65c2-460a-846a-18a39c6a4568">
+    <name>Результат</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="cd659117-9e3c-4ecd-92a6-431bd70af9a8">
+    <name>Сотрудник</name>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>
