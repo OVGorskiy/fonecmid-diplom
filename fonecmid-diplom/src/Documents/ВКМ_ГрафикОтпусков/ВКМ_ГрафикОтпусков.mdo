@@ -26,6 +26,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="5857802d-dcc4-4bf1-a868-6672d96c922e">
@@ -42,6 +43,37 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e3530b70-8d4f-48d1-9717-037862c63c9b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a378fe7d-ce1a-4fed-9302-7ad8c6adf0ed">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>График отпусков</value>
+    </synonym>
+  </forms>
+  <forms uuid="b88a1c15-e529-4062-b767-6c9dce293446">
+    <name>АнализГрафика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ графика отпусков</value>
+    </synonym>
+  </forms>
   <tabularSections uuid="c344574f-b32e-4e32-8c58-839c04332634">
     <producedTypes>
       <objectType typeId="6e6e9ced-7405-4f2a-9499-477095aa890c" valueTypeId="f70b951e-1c72-46e6-9866-4ae5cc32a08f"/>
