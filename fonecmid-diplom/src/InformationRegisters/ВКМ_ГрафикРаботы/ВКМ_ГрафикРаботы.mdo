@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60e06171-27e2-41be-91e1-87720373249f">
+  <producedTypes>
+    <selectionType typeId="cef61585-7ba2-48e0-af4f-81dcf7fdb6dc" valueTypeId="6c3acbd7-8df4-4afc-919b-97066079edd0"/>
+    <listType typeId="e8848af4-d527-44c3-93df-64dae7c9d57e" valueTypeId="063295c2-b119-4b40-bb36-77bf61ea3e55"/>
+    <managerType typeId="22672c1c-c8f2-462c-9557-4adf537cbea1" valueTypeId="22ab15de-5c50-4a47-8554-644e3ed4c08d"/>
+    <recordSetType typeId="62ec9afb-5092-4b0e-a587-3aa16af164fc" valueTypeId="52bd2b6c-dceb-4ca6-98a2-bbb2daeb12c8"/>
+    <recordKeyType typeId="79a58859-6a94-42ab-aee0-a91d0ae3e04e" valueTypeId="b2d58d0a-11e6-4dd3-ab85-e100b62a00b6"/>
+    <recordType typeId="6fe0f5c7-55cb-43d4-b87b-b867e299167a" valueTypeId="9512f77b-0aa9-435b-9b7d-08b7bfc2931c"/>
+    <recordManagerType typeId="e20e81b0-ea2e-49a7-9cdf-83791e51ab4d" valueTypeId="48bde27a-b44f-42c0-9242-e18f3c642006"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>График работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>График работы</value>
+  </listPresentation>
+  <resources uuid="ba7de2df-bf7a-4338-9c39-5b5ce2a91b8e">
+    <name>КоличествоДней</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9c88fbf9-a273-4ae4-a83e-ea77daaa5de1">
+    <name>Дата</name>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

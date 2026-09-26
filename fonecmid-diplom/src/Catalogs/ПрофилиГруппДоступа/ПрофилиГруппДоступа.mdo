@@ -132,6 +132,10 @@
         <value></value>
       </code>
     </items>
+    <items id="c27523e9-e5e5-4a55-ba01-a644bf47f7a9">
+      <name>КадровикРасчетчик</name>
+      <description>Кадровик-расчетчик</description>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1645d75d-de03-42fd-992e-d40a724e2035">
+  <producedTypes>
+    <objectType typeId="f20d99d2-1ca5-4d72-b729-9ab2acb6f27c" valueTypeId="98f02160-faf4-40da-b5e2-62ef320f8527"/>
+    <refType typeId="0779923f-b87e-4c85-b2b7-d343abf79c4d" valueTypeId="5ee6a2fd-ee1c-496d-968a-27eeba8848df"/>
+    <selectionType typeId="8a21e510-db57-4318-bd78-697712f54a8f" valueTypeId="eee69856-e6d1-4e3b-8659-828e9f9d916e"/>
+    <listType typeId="369cfee2-44cd-4d5d-a135-60e34ce0afc6" valueTypeId="ee8e215f-96ba-4da4-8fcf-870cb9f98e53"/>
+    <managerType typeId="a6bd0c93-1e10-4bb9-9b73-a59ca96d1a8d" valueTypeId="29850e5a-70e3-452a-9e71-34142f2de589"/>
+  </producedTypes>
+  <name>ВКМ_НачисленияЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Начисления зарплаты</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>CalculationRegister.ВКМ_Начисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="87621193-6957-4926-bd53-acf78f2fe437">
+    <name>МесяцНачисления</name>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="16b2b6f1-1017-4ac8-ac2a-91a87b569bbc">
+    <name>Комментарий</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="32ef4530-e96c-46e9-90ec-eed9bd257670">
+    <producedTypes>
+      <objectType typeId="8f477974-0c9d-4382-99e3-915d643235ca" valueTypeId="13eded58-546c-4b28-acad-25289304c4f7"/>
+      <rowType typeId="59b7d488-9010-4fce-a8f6-2266ef7b26e9" valueTypeId="5d47af5f-b010-4ab9-898a-f69e3b42bed6"/>
+    </producedTypes>
+    <name>Сотрудники</name>
+    <attributes uuid="7b08fb7c-6edb-4159-a06f-ff8c8affa215">
+      <name>Сотрудник</name>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
