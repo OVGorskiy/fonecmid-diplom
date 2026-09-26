@@ -26,6 +26,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_НачисленияЗарплаты.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>CalculationRegister.ВКМ_Начисления</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_УдержанияСотрудников</registerRecords>
@@ -56,6 +57,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="95e32c3f-bd63-401f-b28c-309703b63335">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление зарплаты</value>
+    </synonym>
+  </forms>
   <tabularSections uuid="32ef4530-e96c-46e9-90ec-eed9bd257670">
     <producedTypes>
       <objectType typeId="8f477974-0c9d-4382-99e3-915d643235ca" valueTypeId="13eded58-546c-4b28-acad-25289304c4f7"/>

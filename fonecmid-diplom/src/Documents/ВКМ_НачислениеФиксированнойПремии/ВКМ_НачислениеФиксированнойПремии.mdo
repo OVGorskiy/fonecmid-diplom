@@ -26,6 +26,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_НачислениеФиксированнойПремии.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>CalculationRegister.ВКМ_Начисления</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_НачисленияПремий</registerRecords>
@@ -57,6 +58,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="6a8c3cfc-6d3a-4431-a213-e243e0582e6b">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление фиксированной премии</value>
+    </synonym>
+  </forms>
   <tabularSections uuid="0833a168-3ab6-4db0-8e22-f668d2707c6d">
     <producedTypes>
       <objectType typeId="2af76a0d-c56b-439c-a109-0062610bc5af" valueTypeId="7bfb5735-ec1c-4e52-9f94-52586046a6cc"/>

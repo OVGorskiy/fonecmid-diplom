@@ -12,4 +12,13 @@
   <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>Document.ВКМ_НачисленияЗарплаты</content>
+  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
+  <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>CalculationRegister.ВКМ_Начисления</content>
+  <content>CalculationRegister.ВКМ_НачисленияПремий</content>
+  <content>CalculationRegister.ВКМ_УдержанияСотрудников</content>
+  <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
+  <content>InformationRegister.ВКМ_ГрафикРаботы</content>
 </mdclass:Subsystem>

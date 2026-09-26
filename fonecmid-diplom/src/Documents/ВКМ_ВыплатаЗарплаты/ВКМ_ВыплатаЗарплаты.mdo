@@ -26,9 +26,34 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_ВыплатаЗарплаты.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="00a53c89-20b1-4bcd-92c5-4d079d83ea34">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fac7e648-077a-49e4-b6b0-dd87f114e978">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выплата зарплаты</value>
+    </synonym>
+  </forms>
   <tabularSections uuid="60522456-32b9-4939-a431-0db5bc841a61">
     <producedTypes>
       <objectType typeId="7ba36ed0-75e4-4778-bb3e-c5cd8e756f03" valueTypeId="6ebea15c-a063-477f-976a-1a6ad2f5a62a"/>
