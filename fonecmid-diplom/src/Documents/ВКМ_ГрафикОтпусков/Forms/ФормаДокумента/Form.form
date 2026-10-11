@@ -215,6 +215,10 @@
     <items xsi:type="form:FormField">
       <name>ОтпускаСотрудниковДатаНачала</name>
       <id>29</id>
+      <title>
+        <key>ru</key>
+        <value>Дата начала </value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -256,6 +260,10 @@
     <items xsi:type="form:FormField">
       <name>ОтпускаСотрудниковДатаОкончания</name>
       <id>32</id>
+      <title>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -437,6 +445,31 @@
       <placementArea>UserCmds</placementArea>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
+    <items xsi:type="form:Button">
+      <name>ПереходНаФормуАнализаГрафика</name>
+      <id>37</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаПереходНаФормуАнализаГрафикаРасширеннаяПодсказка</name>
+        <id>38</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ПереходНаФормуАнализаГрафика</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
@@ -480,6 +513,22 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ПроверитьГрафик</name>
+      </handler>
+    </action>
+  </formCommands>
+  <formCommands>
+    <name>ПереходНаФормуАнализаГрафика</name>
+    <title>
+      <key>ru</key>
+      <value>Переход на форму анализа графика</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПереходНаФормуАнализаГрафика</name>
       </handler>
     </action>
   </formCommands>
