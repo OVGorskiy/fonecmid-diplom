@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<title xsi:type="xs:string">Сотрудник</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Пользователи</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДнейПоПлану</dataPath>
+			<field>ДнейПоПлану</field>
+			<title xsi:type="xs:string">ДнейПоПлану</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДнейФактически</dataPath>
+			<field>ДнейФактически</field>
+			<title xsi:type="xs:string">ДнейФактически</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<query>ВЫБРАТЬ
+	ОтпускаСотрудников.Сотрудник КАК Сотрудник,
+	РАЗНОСТЬДАТ(ОтпускаСотрудников.ДатаНачала, ОтпускаСотрудников.ДатаОкончания, ДЕНЬ) + 1 КАК Дней
+ПОМЕСТИТЬ ВтПланОтпусков
+ИЗ
+	Документ.ВКМ_ГрафикОтпусков.ОтпускаСотрудников КАК ОтпускаСотрудников
+ГДЕ
+	ОтпускаСотрудников.Ссылка.Год = &amp;Год
+	И НЕ ОтпускаСотрудников.Ссылка.ПометкаУдаления
+ИНДЕКСИРОВАТЬ ПО
+	Сотрудник
+;
+ВЫБРАТЬ
+	Начисления.Сотрудник КАК Сотрудник,
+	СУММА(РАЗНОСТЬДАТ(Начисления.ПериодДействияНачало, Начисления.ПериодДействияКонец, ДЕНЬ) + 1) КАК Дней
+ПОМЕСТИТЬ ВтФактОтпусков
+ИЗ
+	РегистрРасчета.ВКМ_Начисления КАК Начисления
+ГДЕ
+	Начисления.ВидРасчета = ПланыВидовРасчета.ВКМ_ОсновныеНачисления.Отпуск
+	И Начисления.ПериодДействияНачало МЕЖДУ &amp;НачалоГода И &amp;КонецГода
+СГРУППИРОВАТЬ ПО
+	Начисления.Сотрудник
+ИНДЕКСИРОВАТЬ ПО
+	Сотрудник
+;
+ВЫБРАТЬ
+	План.Сотрудник КАК Сотрудник,
+	СУММА(План.Дней) КАК ДнейПоПлану,
+	СУММА(ЕСТЬNULL(Факт.Дней, 0)) КАК ДнейФактически
+ИЗ
+	ВтПланОтпусков КАК План
+	ЛЕВОЕ СОЕДИНЕНИЕ ВтФактОтпусков КАК Факт
+	ПО План.Сотрудник = Факт.Сотрудник
+СГРУППИРОВАТЬ ПО
+	План.Сотрудник</query>
+	</dataSet>
+	<defaultSettings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+		<dcsset:selection>
+			<dcsset:item xsi:type="dcsset:SelectedItemField">
+				<dcsset:field>Сотрудник</dcsset:field>
+			</dcsset:item>
+		</dcsset:selection>
+		<dcsset:item xsi:type="dcsset:StructureItemGroup">
+			<dcsset:groupItems>
+				<dcsset:item xsi:type="dcsset:GroupItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+					<dcsset:groupType>Items</dcsset:groupType>
+					<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+				</dcsset:item>
+			</dcsset:groupItems>
+		</dcsset:item>
+	</defaultSettings>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Расход запланированных отпусков</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
